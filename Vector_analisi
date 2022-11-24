@@ -1,0 +1,73 @@
+TRACCIA DATA
+
+Scrivi un programma che, dopo aver riempito casualmente un vettore con numeri
+dispari di due cifre, li modifica alternando a un numero dispari un numero pari
+ottenuto come somma dell’elemento corrente e dell’elemento di posizione
+precedente
+
+ANALISI TESTUALE
+
+per prima cosa abbiamo importato le librerie utili per lo Scanner e per la funzione Random,
+dichiarato le varibili utili per il programma e inserito come nuemro massimo 99 e come numero minimo 10 
+per stabilire un range di combinazioni uguale al numero di opzioni intere che abbiamo tra 10 e 99 e
+creato un vettore di numeri interi casuali compresi da 10 e 20 in modo tale di rendere ancora più automatico il programma
+utilizzanod la funzione random.nextInt(10,20).
+
+Dopodichè il programma si suddivide in due parti:
+
+1) 	creaiamo un ciclo for dove utilizziamo la funzione (Math.random() * combination) + min) per generare i numeri all'interno del vettore, 
+	all'intero del nostro abbiamo inserito un ciclo while che il quale controlla se il numero effettivamente sia pari
+	e sempre dentro nel ciclo for stampiamo i numeri nel vettori
+
+inseriamo un piccolo menu, dove l'utente digita 1 se vuole ridemnsionare i numeri all'interno del vettore e 0 se li vuole lasciare così
+
+2)	creaiamo una condizione fornita sulla scelta dell'utente, il quale se digita 1 sul ridimensionamento dei numeri, usiamo la funzione 
+	Thread.sleep creaimo un delay di 3 milli secondi per simulare il ridimensionamento dei numeri, traviamo all'interno di un ciclo for, un controllo dove
+	poniamo l'indice del vettore al modulo 2 tutto diveso da 0 per controllare se il numero è dispari e la stampa dei numeri all'interno del vettore ridimensionati
+	
+se tutto va bene possiamo notare come:
+nell'indice [0] troviamo un numero dispari la cui somma è un numero dispari
+nell'indice [1] trovaimo un numero pari la cui somma è un numero pari
+nell'indice [2] troviamo un numero dispari la cui somma è un numero dispari
+nell'indice [3] trovaimo un numero pari la cui somma è un numero pari
+e così via...
+
+LIBRERIA UTILIZZATE
+
+java.util.Scanner
+java.util.Random
+
+
+TABELLA DELLE VARIABILI
+
+n = intero
+max = intero
+min = intero
+combination = intero
+i = intero
+Vector = intero
+
+FUNZIONI USATE
+
+Scanner input = new Scanner(System.in)
+Random random = new Random()
+random.nextInt()
+Math.random
+Thread.sleep
+
+CAMPIONI INPUT OUTPUT
+
+input = INPUT
+il resto sono solo di OUTPUT
+
+CASI D'USO
+
+- il sistema fornisce dai 10 ai 20 nuemri inetri causali
+- il sistema chiede all'utente se vuole ridimensionare o meno i numeri
+- l'utente digita la sua scelta
+- il sistema ridemsione i numeri e li stampa
+
+
+
+
+
