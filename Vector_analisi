@@ -60,14 +60,6 @@ CAMPIONI INPUT OUTPUT
 input = INPUT
 il resto sono solo di OUTPUT
 
-CASI D'USO
-
-- il sistema fornisce dai 10 ai 20 nuemri inetri causali
-- il sistema chiede all'utente se vuole ridimensionare o meno i numeri
-- l'utente digita la sua scelta
-- il sistema ridemsione i numeri e li stampa
-
-
 
 
 
