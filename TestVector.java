@@ -1,16 +1,18 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class TestVector {
+class TestVector {
     static Scanner input = new Scanner(System.in);
     static Random random = new Random();
 
     public static void main(String[] args) throws InterruptedException {
 
-        int  n, max, min, combination, i; // dichiarazioi variabili e assegnazioni
+        int a, b, n, max, min, combination, i; // dichiarazioi variabili e assegnazioni
+        a = 2;
+        b = 20;
         max = 99;
         min = 10;
-        n = random.nextInt(10,20); // generatore di numeri interi casuali compresi da 10 a 20
+        n = random.nextInt(b-a); // generatore di numeri interi casuali compresi da 10 a 20
         int[] Vector = new int[n];
         combination = max - min + 1; // stabilito il range delle combinazioni tra 99 e 10
 
